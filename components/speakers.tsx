@@ -16,29 +16,29 @@ const convenors = [
 ]
 
 const resourcePerson = {
-  name: "TBH",
+  name: "TBA",
   role: "GitHub, Kaggle, n8n Speaker",
   image: "/x.png",
 }
 
 const volunteers = [
   {
-    name: "TBH",
+    name: "TBA",
     role: "Technical Lead",
     image: "/x.png",
   },
   {
-    name: "TBH",
+    name: "TBA",
     role: "Photographer",
     image: "/x.png",
   },
   {
-    name: "TBH",
+    name: "TBA",
     role: "Designer",
     image: "/x.png",
   },
   {
-    name: "TBH",
+    name: "TBA",
     role: "Promotion",
     image: "/x.png",
   },

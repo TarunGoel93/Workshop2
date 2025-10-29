@@ -21,6 +21,8 @@ export default function Navigation({ isScrolled }: NavigationProps) {
     { label: "FAQ", href: "#faq" },
   ]
 
+  const formLink = "https://forms.gle/HMHrTAEqRLWBrEXn8"
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -29,6 +31,7 @@ export default function Navigation({ isScrolled }: NavigationProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 bg-gradient-to-br from-primary via-secondary to-accent rounded-lg flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-sm">W</span>
@@ -52,20 +55,25 @@ export default function Navigation({ isScrolled }: NavigationProps) {
             ))}
           </div>
 
+          {/* Desktop Buttons */}
           <div className="hidden md:flex gap-3">
-            <Button
-              variant="outline"
-              size="sm"
-              className="border-border bg-transparent text-foreground hover:bg-primary/10 hover:text-primary transition-smooth"
-            >
-              Sign In
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/50 transition-smooth"
-            >
-              Register
-            </Button>
+            <a href={formLink} target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="outline"
+                size="sm"
+                className="border-border bg-transparent text-foreground hover:bg-primary/10 hover:text-primary transition-smooth"
+              >
+                Sign In
+              </Button>
+            </a>
+            <a href={formLink} target="_blank" rel="noopener noreferrer">
+              <Button
+                size="sm"
+                className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/50 transition-smooth"
+              >
+                Register
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,12 +96,16 @@ export default function Navigation({ isScrolled }: NavigationProps) {
               </a>
             ))}
             <div className="flex gap-2 pt-4">
-              <Button variant="outline" size="sm" className="flex-1 border-border bg-transparent">
-                Sign In
-              </Button>
-              <Button size="sm" className="flex-1 bg-gradient-to-r from-primary to-secondary">
-                Register
-              </Button>
+              <a href={formLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button variant="outline" size="sm" className="w-full border-border bg-transparent">
+                  Sign In
+                </Button>
+              </a>
+              <a href={formLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button size="sm" className="w-full bg-gradient-to-r from-primary to-secondary">
+                  Register
+                </Button>
+              </a>
             </div>
           </div>
         )}

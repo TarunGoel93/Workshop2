@@ -5,9 +5,9 @@ import { ArrowRight } from "lucide-react"
 
 export default function Register() {
   const handleRegisterClick = () => {
-    // Open registration form in new tab or redirect
-    window.open("https://forms.gle/Tba4Wru8WCxVT91z6", "_blank")
+  window.open("https://forms.gle/HMHrTAEqRLWBrEXn8", "_blank")
   }
+
 
   return (
     <section id="register" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">

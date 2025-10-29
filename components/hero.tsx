@@ -39,8 +39,9 @@ export default function Hero() {
   }, [])
 
   const handleRegisterClick = () => {
-    window.open("https://forms.gle/Tba4Wru8WCxVT91z6", "_blank")
+    window.open("https://forms.gle/HMHrTAEqRLWBrEXn8", "_blank")
   }
+
 
   if (!mounted) return null
 
@@ -70,7 +71,7 @@ export default function Hero() {
         <div className="space-y-6">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight">
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-pulse-subtle">
-              Kaggle × GitHub × n8n
+              Kaggle × GitHub × Agentic AI
             </span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground font-light">3 Days of Innovation, Automation & AI</p>

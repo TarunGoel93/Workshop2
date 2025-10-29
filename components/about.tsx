@@ -55,7 +55,7 @@ export default function About() {
           </div>
 
           <div className="animate-slide-in-left group" style={{ animationDelay: "0.2s" }}>
-            <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Day 3: n8n</h3>
+            <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Day 3: Agentic AI</h3>
             <p className="text-muted-foreground group-hover:text-foreground transition-colors">
               Introduce yourself to n8n, an open-source automation tool to streamline your workflows with no code.
               Connect APIs and automate data science tasks.
